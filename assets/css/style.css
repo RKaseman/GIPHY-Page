@@ -1,0 +1,21 @@
+
+* {
+    /* margin: auto; */
+    text-align: center;
+}
+
+header {
+    width: 992px;
+    line-height: 128px;
+
+    margin: auto;
+
+    background-color: darkblue;
+}
+
+button {
+    width: 96px;
+    line-height: 48px;
+    margin: 16px;
+}
+
