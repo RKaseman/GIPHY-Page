@@ -1,21 +1,77 @@
 
 * {
-    /* margin: auto; */
     text-align: center;
 }
 
 header {
-    width: 992px;
+    max-width: 992px;
     line-height: 128px;
+
+    border-style: solid;
+    border-top-width: 16px;
+    border-top-color: #000069;
+    border-right-width: 64px;
+    border-right-color: #22bbbb;
+    border-bottom-width: 16px;
+    border-bottom-color: #000069;
+    border-left-width: 64px;
+    border-left-color: #22bbbb;
 
     margin: auto;
 
-    background-color: darkblue;
+    font-size: 80px;
+    color: #22bbbb;
+    background-color: #000069;
+}
+
+#ownDamnGif {
+    max-width: 992px;
+    height: 96px;
+    /* line-height: 96px; */
+
+    border-style: solid;
+    border-top-width: 16px;
+    border-top-color: #9acd32;
+    border-right-width: 64px;
+    border-right-color: #4169e1;
+    border-bottom-width: 16px;
+    border-bottom-color: #9acd32;
+    border-left-width: 64px;
+    border-left-color: #4169e1;
+    margin: auto;
+
+    background: #9acd32;
+}
+
+#bigForm {
+    width: 384px;
+    line-height: 56px;
+}
+
+form {
+    margin: auto;
+}
+
+input {
+    /* width: 256px; */
+    /* height: 24px; */
+
+    margin: 2px;
+}
+
+#bigField {
+    width: 300px;
+    height: 96px
+}
+
+#btn {
+    width: 64px;
 }
 
 button {
     width: 96px;
     line-height: 48px;
+
     margin: 16px;
 }
 
