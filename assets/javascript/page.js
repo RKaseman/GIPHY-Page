@@ -60,7 +60,7 @@ $("#begin").on("click", function() {
 
     }); // end .btnGen click
 
-    $("#ownDamnGif").append("<action='https://api.giphy.com' form id='wholeForm' method='post'><div><label for='search'>Search GIPHY</label></div><div><input id='bigField type='text' name='search' value='' placeholder='and get your own damn gif'></div><div><input id='btn' type='submit' value='Submit'></div></form>");
+    $("#ownDamnGif").append("<form id='wholeForm' action='https://api.giphy.com' method='post'><div><label for='search'>Search GIPHY</label></div><div><input id='bigField type='text' name='search' value='' placeholder='and get your own damn gif'></div><div><input id='btn' type='submit' value='Submit'></div></form>");
 
 });
 

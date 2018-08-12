@@ -14,12 +14,15 @@ body {
 
 header {
     max-width: 928px;
+    min-height: 152px;
+
     margin: auto;
+    background-color: #000069;
+
+    font-family: "Merienda", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 
     line-height: 56px;
-    font-family: "Merienda", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: #22bbbb;
-    background-color: #000069;
 
     border-style: solid;
     border-top-width: 16px;
@@ -33,21 +36,28 @@ header {
 }
 
 h1 {
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 h2 {
-    font-size: 1.5vw;
+    font-size: 2.2vw;
 }
 
 h3 {
-    font-size:  1.25vw;
+    font-size:  1.46vw;
+    padding: 0px 32px;
 }
 
 #ownDamnGif {
     max-width: 928px;
-    /* height: 88px; */
-    line-height: 56px;
+    min-height: 152px;
+
+    margin: auto;
+    background: #000069;
+
+    font-size: 2.25vw;
+
+    line-height: 32px;
     color: #4169e1;
 
     border-style: solid;
@@ -59,13 +69,11 @@ h3 {
     border-bottom-color: #000069;
     border-left-width: 32px;
     border-left-color: #4169e1;
-    margin: auto;
-
-    background: #000069;
 }
 
 #wholeForm {
     max-width: 928px;
+
     padding: 16px 0px;
 }
 
@@ -74,8 +82,8 @@ form {
 }
 
 input {
-    /* width: 256px; */
-    /* height: 24px; */
+    width: 256px;
+    height: 32px;
 
     margin: 2px;
 }
