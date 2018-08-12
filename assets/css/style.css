@@ -1,49 +1,70 @@
 
-* {
+*, html {
+    font-family: "Galdeano", "Courier New", Courier, monospace, sans-serif;
     text-align: center;
+}
+
+body {
+    background-image: linear-gradient(#000016, #000096);
+}
+
+#wrapper {
+    min-height: 1024px;
 }
 
 header {
     max-width: 928px;
-    line-height: 128px;
+    margin: auto;
+
+    line-height: 56px;
+    font-family: "Merienda", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #22bbbb;
+    background-color: #000069;
 
     border-style: solid;
     border-top-width: 16px;
     border-top-color: #000069;
-    border-right-width: 64px;
+    border-right-width: 32px;
     border-right-color: #22bbbb;
-    border-bottom-width: 16px;
-    border-bottom-color: #000069;
-    border-left-width: 64px;
+    border-bottom-width: 2px;
+    border-bottom-color: #22bbbb;
+    border-left-width: 32px;
     border-left-color: #22bbbb;
+}
 
-    margin: auto;
+h1 {
+    font-size: 3vw;
+}
 
-    font-size: 96px;
-    color: #22bbbb;
-    background-color: #000069;
+h2 {
+    font-size: 1.5vw;
+}
+
+h3 {
+    font-size:  1.25vw;
 }
 
 #ownDamnGif {
     max-width: 928px;
-    height: 88px;
-    /* line-height: 96px; */
+    /* height: 88px; */
+    line-height: 56px;
+    color: #4169e1;
 
     border-style: solid;
     border-top-width: 16px;
-    border-top-color: #9acd32;
-    border-right-width: 64px;
+    border-top-color: #000069;
+    border-right-width: 32px;
     border-right-color: #4169e1;
     border-bottom-width: 16px;
-    border-bottom-color: #9acd32;
-    border-left-width: 64px;
+    border-bottom-color: #000069;
+    border-left-width: 32px;
     border-left-color: #4169e1;
     margin: auto;
 
-    background: #9acd32;
+    background: #000069;
 }
 
-#bigForm {
+#wholeForm {
     max-width: 928px;
     padding: 16px 0px;
 }
