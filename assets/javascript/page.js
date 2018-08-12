@@ -7,7 +7,6 @@ var topicArr = [
     "women"
     ];
     console.log("topicArr : " + topicArr);
-    console.log("----onLoad----");
 
 $("#begin").on("click", function() {
     $("#begin").hide();
@@ -17,19 +16,15 @@ $("#begin").on("click", function() {
         //     topicArr[i].replace(/"+"/g, " t ");
         // }
         $("#buttons").append($("<button class='btnGen' data-topic="+topicArr[i]+">").text(topicArr[i]));
-        // console.log(".this '#begin' : " + this);
         console.log("topicArr[i] : " + topicArr[i]);
-        console.log("----1----");
     }; // end for i
 
     $(".btnGen").on("click", function() {
         $("#gifs").empty();
         var dataTopic = $(this).attr("data-topic")
         console.log("dataTopic : " + dataTopic);
-        var btnURLs = "http://api.giphy.com/v1/gifs/search?q="+dataTopic+"&api_key="+giphyAPI+"&limit=5";
-        // console.log("this '.btnGen' : " + this);
+        var btnURLs = "https://api.giphy.com/v1/gifs/search?q="+dataTopic+"&api_key="+giphyAPI+"&limit=5";
         console.log("btnURLs : " + btnURLs);
-        console.log("----2----");
 
     $.ajax({
         url: btnURLs,
@@ -39,11 +34,10 @@ $("#begin").on("click", function() {
             console.log(response.data);
             for (j = 0; j < response.data.length; j++) {
                 console.log("response.data.length = " + response.data.length);
-                var p = $("<p>").text("Rating Test " + response.data[j].rating);
+                var p = $("#gifs").append("<p>Rated " + response.data[j].rating + "</p>");
                 var topicGif = $("<img>");
                 topicGif.attr("src", response.data[j].images.fixed_height.url);
-                $("#gifs").append(topicGif);
-                $("#gifs").append(p);
+                $("#gifs").append(p, topicGif);
             }; // end for j
         }); //end .then
     }); // end .btnGen click

@@ -4,7 +4,7 @@
 }
 
 header {
-    max-width: 992px;
+    max-width: 928px;
     line-height: 128px;
 
     border-style: solid;
@@ -25,7 +25,7 @@ header {
 }
 
 #ownDamnGif {
-    max-width: 992px;
+    max-width: 928px;
     height: 88px;
     /* line-height: 96px; */
 
@@ -44,8 +44,8 @@ header {
 }
 
 #bigForm {
-    width: 384px;
-    /* line-height: 56px; */
+    max-width: 928px;
+    padding: 16px 0px;
 }
 
 form {
@@ -70,12 +70,25 @@ input {
 
 button {
     width: 96px;
-    /* line-height: 48px; */
+    line-height: 48px;
 
     margin: 16px;
 }
 
-p {
+#gifs {
     display: inline;
+    max-width: 928px;
+    background-color: #ffa07a;
+
+    margin: auto;
+}
+
+/* .ratedImg {
+    display: inline;
+} */
+
+p {
+    display: block;
+    margin: 8px 0px;
 }
 
