@@ -1,53 +1,50 @@
 
 var giphyAPI = "894INoKSXfEqlodBWQxaKvj35Cjy50VM";
-var topics = [
+var topicArr = [
     "space",
     "video+games",
     "hockey",
     "women"
     ];
-    console.log("topics : " + topics);
+    console.log("topicArr : " + topicArr);
 
 $("button").on("click", function() {
     $("#start").hide();
-    for (i = 0; i < topics.length; i++) {
-        // if (topics[i].includes("+")) {
-        //     topics[i].replace(/\W/, " t ");
+
+    for (i = 0; i < topicArr.length; i++) {
+        // if (topicArr[i].includes("+")) {
+        //     topicArr[i].replace(/\W/, " t ");
         // }
-        $("#buttons").append($("<button class='btnGen' data-topic=" + topics[i] + ">").text(topics[i]));
-        console.log("topics[i] : " + topics[i]);
+        $("#buttons").append($("<button class='btnGen' data-topic=" + topicArr[i] + ">").text(topicArr[i]));
+        console.log("this = button : " + this);
+        console.log("topicArr[i] : " + topicArr[i]);
 
-    var topic = $(".btnGen").attr("data-topic");
-    console.log(topic);
-
-        // $(".btnGen").attr("data-topic");
-        // var searchTopics = $(".btnGen").attr("data-topic");
-        // console.log("searchTopics : " + searchTopics);
-
-        // var btnURLs = "http://api.giphy.com/v1/gifs/search?q=" + searchTopics + "&api_key=" + giphyAPI + "&limit=5",
-    };
-
-    var btnURLs = "http://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=" + giphyAPI + "&limit=5";
+    $(".btnGen").on("click", function() {
+        var dataTopicTest = $(this).attr("data-topic")
+        console.log("dataTopicTest : " + dataTopicTest);
+        var btnURLs = "http://api.giphy.com/v1/gifs/search?q=" + dataTopicTest + "&api_key=" + giphyAPI + "&limit=5";
+        console.log("this = btnGen : " + this);
+        console.log("btnURLs : " + btnURLs);
 
     $.ajax({
         url: btnURLs,
         method: "GET"
-    }).then(function(response) {
-        console.log(response.data);
+    })
+        .then(function(response) {
+            console.log(response.data);
+            // console.log(response.data[0].images);
+            for (j = 0; j < response.data.length; j++) {
+                var p = $("<p>").text("Rating Test " + response.data[j].rating);
+                var topicGif = $("<img>");
+                topicGif.attr("src", response.data[j].images.fixed_height.url);
+                $("#gifs").append(topicGif);
+                $("#gifs").append(p);
+            }; // end for j
+        }); //end .then
+    }); // end .btnGen click
+    }; // end for i
 
-        var results = response.data;
-        // console.log(response.data[0].images);
+    $("#ownDamnGif").append("<form id='bigForm'><div><input id='bigField type='text' name='search' value='Get your own damn gif'></div><div><input id='btn' type='submit' value='Submit'></div></form>");
 
-        for (j = 0; j < results.length; j++) {
-            // var ratingDisplay = results[i].rating;
-            var p = $("<p>").text("Rating Test " + results[i].rating);
-            var topicGif = $("<img>");
-            topicGif.attr("src", results[i].images.fixed_height.url);
-            $("#gifs").append(topicGif);
-            $("#gifs").append(p);
-        }
-
-    });
-    $("#ownDamnGif").append("<form id='bigForm'><p><input id='bigField type='text' name='search' value='Get your own damn gif'></p><p><input id='btn' type='submit' value='Submit'></p></form>");
 });
 

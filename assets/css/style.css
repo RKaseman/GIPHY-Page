@@ -75,3 +75,7 @@ button {
     margin: 16px;
 }
 
+p {
+    display: inline;
+}
+
