@@ -14,20 +14,20 @@ $("#begin").on("click", function() {
 
     for (i = 0; i < topicArr.length; i++) {
         // if (topicArr[i].includes("+")) {
-        //     topicArr[i].replace(/\W/, " t ");
+        //     topicArr[i].replace(/"+"/g, " t ");
         // }
         $("#buttons").append($("<button class='btnGen' data-topic="+topicArr[i]+">").text(topicArr[i]));
-        console.log(".this '#begin' : " + this);
+        // console.log(".this '#begin' : " + this);
         console.log("topicArr[i] : " + topicArr[i]);
         console.log("----1----");
     }; // end for i
 
     $(".btnGen").on("click", function() {
         $("#gifs").empty();
-        var dataTopicTest = $(this).attr("data-topic")
-        console.log("dataTopicTest : " + dataTopicTest);
-        var btnURLs = "http://api.giphy.com/v1/gifs/search?q="+dataTopicTest+"&api_key="+giphyAPI+"&limit=5";
-        console.log("this '.btnGen' : " + this);
+        var dataTopic = $(this).attr("data-topic")
+        console.log("dataTopic : " + dataTopic);
+        var btnURLs = "http://api.giphy.com/v1/gifs/search?q="+dataTopic+"&api_key="+giphyAPI+"&limit=5";
+        // console.log("this '.btnGen' : " + this);
         console.log("btnURLs : " + btnURLs);
         console.log("----2----");
 
