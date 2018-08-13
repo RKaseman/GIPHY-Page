@@ -36,7 +36,7 @@ header {
 }
 
 h1 {
-    font-size: 3.5vw;
+    font-size: 3.4vw;
 }
 
 h2 {
@@ -107,9 +107,10 @@ button {
 #gifs {
     display: inline;
     max-width: 928px;
-    background-color: #ffa07a;
+    /* background-color: #ffa07a; */
 
     margin: auto;
+    padding: 16px;
 }
 
 /* .ratedImg {
@@ -118,6 +119,8 @@ button {
 
 p {
     display: block;
+
+    color: #22bbbb;
     margin: 8px 0px;
 }
 

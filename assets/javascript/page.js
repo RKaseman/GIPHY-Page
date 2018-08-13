@@ -1,14 +1,16 @@
 
+$(document).ready(function () {
+
 var giphyAPI = "894INoKSXfEqlodBWQxaKvj35Cjy50VM";
 var topicArr = [
     "women+space",
     "women+hockey",
     "women+celebrities",
     "women+video+games",
-    ];
+];
     console.log("topicArr : " + topicArr);
 
-$("#begin").on("click", function() {
+$("#begin").on("click", function () {
     $("#begin").hide();
     $("h3").hide();
 
@@ -16,22 +18,22 @@ $("#begin").on("click", function() {
         // if (topicArr[i].includes("+")) {
         //     topicArr[i].replace(/"+"/g, " t ");
         // }
-        $("#buttons").append($("<button class='btnGen' data-topic="+topicArr[i]+">").text(topicArr[i]));
+        $("#buttons").append($("<button class='btnGen' data-topic=" + topicArr[i] + ">").text(topicArr[i]));
         console.log("topicArr[i] : " + topicArr[i]);
     }; // end for i
 
-    $(".btnGen").on("click", function() {
+    $(".btnGen").on("click", function () {
         $("#gifs").empty();
         var dataTopic = $(this).attr("data-topic")
         console.log("dataTopic : " + dataTopic);
-        var btnURLs = "https://api.giphy.com/v1/gifs/search?q="+dataTopic+"&api_key="+giphyAPI+"&limit=5&offset=5";
+        var btnURLs = "https://api.giphy.com/v1/gifs/search?q=" + dataTopic + "&api_key=" + giphyAPI + "&limit=5&offset=5";
         console.log("btnURLs : " + btnURLs);
 
     $.ajax({
         url: btnURLs,
         method: "GET"
     }) // end $.ajax
-        .then(function(response) {
+        .then(function (response) {
             console.log(response.data);
             for (j = 0; j < response.data.length; j++) {
                 console.log("response.data.length = " + response.data.length);
@@ -44,23 +46,43 @@ $("#begin").on("click", function() {
                 topicGif.attr("class", "gif");
                 $("#gifs").append(p, topicGif);
             }; // end for j
-        $(".gif").on("click", function() {
-            console.log("this : " + this);
-            var dataState = $(this).attr("data-state");
-            if (dataState === "still") {
-                $(this).attr("src", $(this).attr("data-animate"));
-                $(this).attr("data-state", "animate");
-            }
-            else {
-                $(this).attr("src", $(this).attr("data-still"));
-                $(this).attr("data-state", "still");
-            }
-        }); // end animation toggle
-        }); //end .then
 
+            $(".gif").on("click", function () {
+                console.log("this : " + this);
+                var dataState = $(this).attr("data-state");
+                if (dataState === "still") {
+                    $(this).attr("src", $(this).attr("data-animate"));
+                    $(this).attr("data-state", "animate");
+                }
+                    else {
+                        $(this).attr("src", $(this).attr("data-still"));
+                        $(this).attr("data-state", "still");
+                    }
+            }); // end animation toggle
+        }); //end .then
     }); // end .btnGen click
 
-    $("#ownDamnGif").append("<form id='wholeForm' action='https://api.giphy.com' method='post'><div><label for='search'>Search GIPHY</label></div><div><input id='bigField type='text' name='search' value='' placeholder='and get your own damn gif'></div><div><input id='btn' type='submit' value='Submit'></div></form>");
+        $("#ownDamnGif").append(
+            "<form id='wholeForm' action='#' method='post'>" 
+                + "<div>" 
+                    + "<label for='search'>Search GIPHY</label>" 
+                + "</div>" 
+                + "<div>" 
+                    + "<input id='bigField' type='text' name='search' value='' placeholder='and get your own damn gif'>" 
+                + "</div>" 
+                + "<div>" 
+                    + "<input id='btn' type='submit' value='Submit'>" 
+                + "</div>" 
+            + "</form>");
+
+        $("#btn").on("click", function(event) {
+            var searchValue = $("#bigField").attr("value");
+            console.log("searchValue : " + searchValue);
+
+            event.preventDefault();
+            console.log(this);
+        });
+    });
 
 });
 
