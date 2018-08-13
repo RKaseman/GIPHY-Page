@@ -88,10 +88,9 @@ input {
     margin: 2px;
 }
 
-#bigField {
+/* #bigField {
     width: 300px;
-    /* height: 96px */
-}
+} */
 
 #btn {
     width: 64px;
@@ -122,5 +121,37 @@ p {
 
     color: #22bbbb;
     margin: 8px 0px;
+}
+
+input[type=text] {
+    color: #22bbbb;
+    background-color: #000000;
+    border: 2px solid #8b008b;
+    padding: 4px;
+}
+
+/* input[type=submit] {
+    cursor: pointer;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    border: none;
+    padding: 16px 24px;
+} */
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #8b008b;
+}
+
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+
 }
 
