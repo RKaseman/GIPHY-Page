@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(#000016, #000096);
+    background-image: linear-gradient(#000008, #000096, #000008);
 }
 
 #wrapper {
@@ -15,13 +15,11 @@ body {
 header {
     max-width: 928px;
     min-height: 152px;
-
     margin: auto;
     background-color: #000069;
 
     font-family: "Merienda", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-
-    line-height: 56px;
+    line-height: 64px;
     color: #22bbbb;
 
     border-style: solid;
@@ -36,11 +34,11 @@ header {
 }
 
 h1 {
-    font-size: 3.4vw;
+    font-size: 2.75vw;
 }
 
 h2 {
-    font-size: 2.2vw;
+    font-size: 2.0vw;
 }
 
 h3 {
@@ -51,12 +49,10 @@ h3 {
 #ownDamnGif {
     max-width: 928px;
     min-height: 152px;
-
     margin: auto;
     background: #000069;
 
     font-size: 2.25vw;
-
     line-height: 32px;
     color: #4169e1;
 
@@ -73,7 +69,6 @@ h3 {
 
 #wholeForm {
     max-width: 928px;
-
     padding: 16px 0px;
 }
 
@@ -84,13 +79,8 @@ form {
 input {
     width: 256px;
     height: 32px;
-
     margin: 2px;
 }
-
-/* #bigField {
-    width: 300px;
-} */
 
 #btn {
     width: 64px;
@@ -98,6 +88,7 @@ input {
 
 button {
     width: 96px;
+
     line-height: 48px;
 
     margin: 16px;
@@ -106,15 +97,9 @@ button {
 #gifs {
     display: inline;
     max-width: 928px;
-    /* background-color: #ffa07a; */
-
     margin: auto;
     padding: 16px;
 }
-
-/* .ratedImg {
-    display: inline;
-} */
 
 p {
     display: block;
@@ -145,13 +130,76 @@ input[type=submit]:hover {
 
 @media only screen and (max-width: 980px) {
 
+    h1 {
+        font-size: 4.0vw;
+
+    }
+
+    h2 {
+        font-size: 3.1vw;
+    }
+
+    h3 {
+        font-size:  3.0vw;
+        padding: 0px 16px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
 
+    h1 {
+        font-size: 4.3vw;
+    }
+
+    h2 {
+        font-size: 3.2vw;
+    }
+
+    h3 {
+        font-size:  3.2vw;
+        padding: 0px 24px;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
+
+    h1 {
+        font-size: 4.5vw;
+
+    }
+
+    h2 {
+        font-size: 3.6vw;
+    }
+
+    h3 {
+        font-size:  3.5vw;
+        padding: 0px 16px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    header {
+        line-height: 32px;
+    }
+
+    h1 {
+        font-size: 5.0vw;
+
+    }
+
+    h2 {
+        font-size: 4.1vw;
+    }
+
+    h3 {
+        font-size:  4.0vw;
+        padding: 0px 16px;
+    }
 
 }
 
