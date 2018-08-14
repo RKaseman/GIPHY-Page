@@ -18,17 +18,9 @@ $("#begin").on("click", function () {
     function userBtn() {
         $("#buttons").empty();
         for (i = 0; i < topicArr.length; i++) {
-            // if (topicArr[i].includes("[+]")) {
-                // topicArr[i].replace(/\+/g, " t ");
-                // topicArr[i].replace(/\&#x2B;/g, " t ");
-                // .replace(/[+]/g, " ");
-            // }
-
-// 
-    // var newBtn = topicArr[i].split("+").join(" ");
-// 
-
-            $("#buttons").append($("<button class='btnGen' data-topic=" + topicArr[i] + ">").text(topicArr[i]));
+        var buttonText = topicArr[i].split("+").join(" ");
+        console.log("buttonText : " + buttonText);
+            $("#buttons").append($("<button class='btnGen' data-topic=" + topicArr[i] + ">").text(buttonText));
             console.log("topicArr[i] : " + topicArr[i]);
         }; // end for i
 

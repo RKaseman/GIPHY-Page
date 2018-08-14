@@ -24,11 +24,11 @@ header {
 
     border-style: solid;
     border-top-width: 16px;
-    border-top-color: #000069;
+    border-top-color: #007777;
     border-right-width: 32px;
     border-right-color: #22bbbb;
     border-bottom-width: 2px;
-    border-bottom-color: #22bbbb;
+    border-bottom-color: #000040;
     border-left-width: 32px;
     border-left-color: #22bbbb;
 }
@@ -62,14 +62,9 @@ h3 {
     border-right-width: 32px;
     border-right-color: #4169e1;
     border-bottom-width: 16px;
-    border-bottom-color: #000069;
+    border-bottom-color: #000040;
     border-left-width: 32px;
     border-left-color: #4169e1;
-}
-
-#wholeForm {
-    max-width: 928px;
-    padding: 16px 0px;
 }
 
 form {
@@ -94,19 +89,19 @@ button {
     margin: 16px;
 }
 
-#gifs {
+/* #gifs {
     display: inline;
     max-width: 928px;
     margin: auto;
     padding: 16px;
-}
+} */
 
-p {
+/* p {
     display: block;
 
     color: #22bbbb;
     margin: 8px 0px;
-}
+} */
 
 input[type=text] {
     color: #22bbbb;
@@ -121,12 +116,11 @@ input[type=submit], button {
     color: #000000;
     border-width: 2px;
     border-color: #000000;
-    /* padding: 16px 24px; */
 }
 
 input[type=submit]:hover {
     cursor: pointer;
-    background-color: #8b008b;
+    background-color: #9c119c;
 }
 
 @media only screen and (max-width: 980px) {
