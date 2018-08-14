@@ -1,36 +1,34 @@
 
 * {
+    /* typography */
     font-family: "Galdeano", "Courier New", Courier, monospace, sans-serif;
     text-align: center;
 }
 
 html {
+    /* full page */
     min-height: 100%;
 }
 
 body {
     background-image: linear-gradient(#000008, #000096, #000008);
+    /* box */
     border: 16px solid #000000;
-    /* opacity: 0.5; */
 }
 
 #wrapper {
+    /* box */
     min-height: 1024px;
-    background-image: url("../../assets/images/female-symbol-icon-71464.png");
-    background-size: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* background-blend-mode: darken; */
-    /* background-size: cover; */
 }
 
 header {
+    /* typography */
     font-family: "Merienda", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     line-height: 64px;
     color: #22bbbb;
-
+    /* box */
     max-width: 928px;
-    min-height: 152px;
+    min-height: 192px;
     margin: auto;
     background-color: #000069;
 
@@ -46,24 +44,34 @@ header {
 }
 
 h1 {
+    /* typography */
     font-size: 2.75vw;
+    text-shadow: 4px 4px 6px #000000ff;
+    /* box */
+    padding: 16px 0px;
 }
 
 h2 {
+    /* typography */
     font-size: 2.0vw;
+    text-shadow: 4px 4px 6px #000000ff;
 }
 
 h3 {
+    /* typography */
     font-size:  1.46vw;
-    padding: 0px 32px;
+    text-shadow: 4px 4px 6px #000000ff;
+    /* box */
+    padding: 16px 32px;
 }
 
 #ownDamnGif {
+    /* box */
     max-width: 928px;
-    min-height: 152px;
+    min-height: 192px;
     margin: auto;
     background: #000069;
-
+    /* typography */
     font-size: 2.25vw;
     line-height: 32px;
     color: #4169e1;
@@ -77,6 +85,8 @@ h3 {
     border-bottom-color: #000040;
     border-left-width: 32px;
     border-left-color: #4169e1;
+    /* box */
+    box-shadow: 4px 4px 32px 4px #000000ff;
 }
 
 form {
@@ -84,40 +94,62 @@ form {
 }
 
 input {
+    /* box */
     width: 75%;
     height: 32px;
-    margin: 2px;
+    margin: 16px;
+    box-shadow: 4px 4px 32px 4px #000000ff;
 }
 
 #btn {
+    /* box */
     width: 64px;
+    box-shadow: 4px 4px 32px 4px #000000ff;
 }
 
 button {
     width: 128px;
-
+    margin: 32px 16px;
     line-height: 32px;
+    box-shadow: 4px 4px 32px 4px #000000ff;
+}
 
-    margin: 16px;
+#begin {
+    background-image: url("../../assets/images/female-symbol-icon-71464.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* typography */
+    color: #44dddd;
+    text-shadow: 2px 2px 4px #000000ff;
+}
+
+.btnGen {
+    /* typography */
+    color: #44dddd;
+
 }
 
 #gifs {
-    /* display: inline; */
-    /* max-width: 928px; */
+    /* box */
     margin: auto;
     padding: 16px;
+    box-shadow: 4px 4px 32px 4px #000000ff;
 }
 
 p {
     display: block;
-
+    /* typography */
     color: #22bbbb;
+    /* box */
     margin: 8px 0px;
 }
 
 input[type=text] {
+    /* typography */
     color: #22bbbb;
     background-color: #000000;
+    /* box */
     border: 2px solid #8b008b;
     padding: 4px;
 }
@@ -125,6 +157,7 @@ input[type=text] {
 input[type=submit], button {
     cursor: pointer;
     background-color: #8b008b;
+    /* typography */
     color: #000000;
     border-width: 2px;
     border-color: #000000;
@@ -132,23 +165,25 @@ input[type=submit], button {
 
 input[type=submit]:hover {
     cursor: pointer;
+    color: #22bbbb;
     background-color: #4e0a4b;
 }
 
 @media only screen and (max-width: 980px) {
 
     h1 {
+        /* typography */
         font-size: 4.0vw;
-
     }
 
     h2 {
+        /* typography */
         font-size: 3.1vw;
     }
 
     h3 {
+        /* typography */
         font-size:  2.4vw;
-        padding: 0px 16px;
     }
 
 }
@@ -156,19 +191,22 @@ input[type=submit]:hover {
 @media only screen and (max-width: 768px) {
 
     h1 {
+        /* typography */
         font-size: 4.3vw;
     }
 
     h2 {
+        /* typography */
         font-size: 3.2vw;
     }
 
     h3 {
-        font-size:  3.2vw;
-        padding: 0px 24px;
+        /* typography */
+        font-size:  3.1vw;
     }
 
     label {
+        /* typography */
         font-size: 3.2vw;
     }
 
@@ -177,20 +215,24 @@ input[type=submit]:hover {
 @media only screen and (max-width: 640px) {
 
     h1 {
+        /* typography */
         font-size: 4.5vw;
-
     }
 
     h2 {
+        /* typography */
         font-size: 3.6vw;
     }
 
     h3 {
+        /* typography */
         font-size:  3.5vw;
+        /* box */
         padding: 0px 16px;
     }
 
     label {
+        /* typography */
         font-size: 3.6vw;
     }
 
@@ -203,20 +245,24 @@ input[type=submit]:hover {
     }
 
     h1 {
+        /* typography */
         font-size: 5.0vw;
-
     }
 
     h2 {
+        /* typography */
         font-size: 4.1vw;
     }
 
     h3 {
+        /* typography */
         font-size:  4.0vw;
+        /* box */
         padding: 0px 16px;
     }
 
     label {
+        /* typography */
         font-size: 4.0vw;
     }
 

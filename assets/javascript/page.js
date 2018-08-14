@@ -70,7 +70,7 @@ $("#begin").on("click", function () {
     $("#ownDamnGif").append(
         "<form id='wholeForm' action='#' method='post'>" 
             + "<div>" 
-                + "<label for='search'>Search GIPHY</label>" 
+                + "<label for='search'><h2>Search GIPHY</h2></label>" 
             + "</div>" 
             + "<div>" 
                 + "<input type='text' id='bigField' name='search' value='' placeholder='&#x263b; and get your own damn gif -- and don&#x0027;t take this too seriously &#x263b;'>" 
