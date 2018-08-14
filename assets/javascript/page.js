@@ -23,6 +23,11 @@ $("#begin").on("click", function () {
                 // topicArr[i].replace(/\&#x2B;/g, " t ");
                 // .replace(/[+]/g, " ");
             // }
+
+// 
+    // var newBtn = topicArr[i].split("+").join(" ");
+// 
+
             $("#buttons").append($("<button class='btnGen' data-topic=" + topicArr[i] + ">").text(topicArr[i]));
             console.log("topicArr[i] : " + topicArr[i]);
         }; // end for i
@@ -86,7 +91,8 @@ $("#begin").on("click", function () {
             topicArr.push("women+" + searchValue);
             console.log("topicArr .push : " + topicArr);
             event.preventDefault();
-            $("#bigField").empty();
+            $("#bigField").text("value", "");
+            // $("input[type='text']").val("");
             userBtn();
         });
     });

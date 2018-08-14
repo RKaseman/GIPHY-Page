@@ -115,13 +115,14 @@ input[type=text] {
     padding: 4px;
 }
 
-/* input[type=submit] {
+input[type=submit], button {
     cursor: pointer;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    border: none;
-    padding: 16px 24px;
-} */
+    background-color: #8b008b;
+    color: #000000;
+    border-width: 2px;
+    border-color: #000000;
+    /* padding: 16px 24px; */
+}
 
 input[type=submit]:hover {
     cursor: pointer;
