@@ -1,26 +1,38 @@
 
-*, html {
+* {
     font-family: "Galdeano", "Courier New", Courier, monospace, sans-serif;
     text-align: center;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     background-image: linear-gradient(#000008, #000096, #000008);
+    border: 16px solid #000000;
+    /* opacity: 0.5; */
 }
 
 #wrapper {
     min-height: 1024px;
+    background-image: url("../../assets/images/female-symbol-icon-71464.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-blend-mode: darken; */
+    /* background-size: cover; */
 }
 
 header {
+    font-family: "Merienda", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    line-height: 64px;
+    color: #22bbbb;
+
     max-width: 928px;
     min-height: 152px;
     margin: auto;
     background-color: #000069;
-
-    font-family: "Merienda", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    line-height: 64px;
-    color: #22bbbb;
 
     border-style: solid;
     border-top-width: 16px;
@@ -72,7 +84,7 @@ form {
 }
 
 input {
-    width: 256px;
+    width: 75%;
     height: 32px;
     margin: 2px;
 }
@@ -82,26 +94,26 @@ input {
 }
 
 button {
-    width: 96px;
+    width: 128px;
 
-    line-height: 48px;
+    line-height: 32px;
 
     margin: 16px;
 }
 
-/* #gifs {
-    display: inline;
-    max-width: 928px;
+#gifs {
+    /* display: inline; */
+    /* max-width: 928px; */
     margin: auto;
     padding: 16px;
-} */
+}
 
-/* p {
+p {
     display: block;
 
     color: #22bbbb;
     margin: 8px 0px;
-} */
+}
 
 input[type=text] {
     color: #22bbbb;
@@ -120,7 +132,7 @@ input[type=submit], button {
 
 input[type=submit]:hover {
     cursor: pointer;
-    background-color: #9c119c;
+    background-color: #4e0a4b;
 }
 
 @media only screen and (max-width: 980px) {
@@ -135,7 +147,7 @@ input[type=submit]:hover {
     }
 
     h3 {
-        font-size:  3.0vw;
+        font-size:  2.4vw;
         padding: 0px 16px;
     }
 
@@ -156,6 +168,10 @@ input[type=submit]:hover {
         padding: 0px 24px;
     }
 
+    label {
+        font-size: 3.2vw;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -172,6 +188,10 @@ input[type=submit]:hover {
     h3 {
         font-size:  3.5vw;
         padding: 0px 16px;
+    }
+
+    label {
+        font-size: 3.6vw;
     }
 
 }
@@ -194,6 +214,14 @@ input[type=submit]:hover {
     h3 {
         font-size:  4.0vw;
         padding: 0px 16px;
+    }
+
+    label {
+        font-size: 4.0vw;
+    }
+
+    img {
+        max-width: 75%;
     }
 
 }

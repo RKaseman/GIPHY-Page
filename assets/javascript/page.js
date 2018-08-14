@@ -11,8 +11,8 @@ var topicArr = [
     console.log("topicArr set : " + topicArr);
 
 $("#begin").on("click", function () {
-    $("#begin").hide();
-    $("h3").hide();
+    $("#begin").remove();
+    $("h3").remove();
 
     userBtn();
     function userBtn() {
@@ -62,20 +62,23 @@ $("#begin").on("click", function () {
                         }
                 }); // end animation switch state
             }); //end .then
+
         }); // end .btnGen click
+
     }; // end userBtn
-        $("#ownDamnGif").append(
-            "<form id='wholeForm' action='#' method='post'>" 
-                + "<div>" 
-                    + "<label for='search'>Search GIPHY</label>" 
-                + "</div>" 
-                + "<div>" 
-                    + "<input type='text' id='bigField' name='search' value='' placeholder='and get your own damn gif'>" 
-                + "</div>" 
-                + "<div>" 
-                    + "<input id='btn' type='submit' value='Submit'>" 
-                + "</div>" 
-            + "</form>");
+
+    $("#ownDamnGif").append(
+        "<form id='wholeForm' action='#' method='post'>" 
+            + "<div>" 
+                + "<label for='search'>Search GIPHY</label>" 
+            + "</div>" 
+            + "<div>" 
+                + "<input type='text' id='bigField' name='search' value='' placeholder='&#x263b; and get your own damn gif -- and don&#x0027;t take this too seriously &#x263b;'>" 
+            + "</div>" 
+            + "<div>" 
+                + "<input id='btn' type='submit' value='Submit'>" 
+            + "</div>" 
+        + "</form>");
 
         $("#btn").on("click", function(event) {
             var searchValue = document.querySelector("#bigField").value;
@@ -83,11 +86,11 @@ $("#begin").on("click", function () {
             topicArr.push("women+" + searchValue);
             console.log("topicArr .push : " + topicArr);
             event.preventDefault();
-            $("#bigField").text("value", "");
-            // $("input[type='text']").val("");
+            $("#bigField").val("");
             userBtn();
-        });
-    });
+        }); // end user search
+
+    }); // end #begin click
 
 });
 
