@@ -11,7 +11,7 @@ var topicArr = [
     console.log("topicArr set : " + topicArr);
 
 $("#begin").on("click", function () {
-    $("#begin").remove();
+    $("#begin").hide();
     $("h3").remove();
 
     userBtn();
@@ -28,7 +28,7 @@ $("#begin").on("click", function () {
             $("#gifs").empty();
             var dataTopic = $(this).attr("data-topic")
             console.log("dataTopic : " + dataTopic);
-            var btnURLs = "https://api.giphy.com/v1/gifs/search?q=" + dataTopic + "&api_key=" + giphyAPI + "&limit=5&offset=5";
+            var btnURLs = "https://api.giphy.com/v1/gifs/search?q=" + dataTopic + "&api_key=" + giphyAPI + "&limit=10&offset=15";
             console.log("btnURLs : " + btnURLs);
 
         $.ajax({

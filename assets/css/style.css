@@ -172,17 +172,14 @@ input[type=submit]:hover {
 @media only screen and (max-width: 980px) {
 
     h1 {
-        /* typography */
         font-size: 4.0vw;
     }
 
     h2 {
-        /* typography */
         font-size: 3.1vw;
     }
 
     h3 {
-        /* typography */
         font-size:  2.4vw;
     }
 
@@ -191,22 +188,18 @@ input[type=submit]:hover {
 @media only screen and (max-width: 768px) {
 
     h1 {
-        /* typography */
         font-size: 4.3vw;
     }
 
     h2 {
-        /* typography */
         font-size: 3.2vw;
     }
 
     h3 {
-        /* typography */
         font-size:  3.1vw;
     }
 
     label {
-        /* typography */
         font-size: 3.2vw;
     }
 
@@ -215,24 +208,20 @@ input[type=submit]:hover {
 @media only screen and (max-width: 640px) {
 
     h1 {
-        /* typography */
         font-size: 4.5vw;
     }
 
     h2 {
-        /* typography */
         font-size: 3.6vw;
     }
 
     h3 {
-        /* typography */
         font-size:  3.5vw;
         /* box */
         padding: 0px 16px;
     }
 
     label {
-        /* typography */
         font-size: 3.6vw;
     }
 
@@ -245,24 +234,20 @@ input[type=submit]:hover {
     }
 
     h1 {
-        /* typography */
         font-size: 5.0vw;
     }
 
     h2 {
-        /* typography */
         font-size: 4.1vw;
     }
 
     h3 {
-        /* typography */
         font-size:  4.0vw;
         /* box */
         padding: 0px 16px;
     }
 
     label {
-        /* typography */
         font-size: 4.0vw;
     }
 
