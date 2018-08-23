@@ -17,6 +17,7 @@ $("#begin").on("click", function () {
     userBtn();
     function userBtn() {
         $("#buttons").empty();
+        $("#buttons").append("<div id='link'><span>click the gifs to animate</span><br><span><a href='https://github.com/RKaseman/GIPHY-Page' target='_blank'>check out the code</a></span></div>");
         for (i = 0; i < topicArr.length; i++) {
         var buttonText = topicArr[i].split("+").join(" ");
         console.log("buttonText : " + buttonText);

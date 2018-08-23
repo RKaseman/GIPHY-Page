@@ -1,0 +1,93 @@
+
+@media only screen and (max-width: 980px) {
+
+    h1 {
+        font-size: 4.0vw;
+    }
+
+    h2 {
+        font-size: 3.1vw;
+    }
+
+    h3 {
+        font-size:  2.4vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 4.3vw;
+    }
+
+    h2 {
+        font-size: 3.2vw;
+    }
+
+    h3 {
+        font-size:  3.1vw;
+    }
+
+    label {
+        font-size: 3.2vw;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    h2 {
+        font-size: 3.6vw;
+    }
+
+    h3 {
+        font-size:  3.5vw;
+        /* box */
+        padding: 0px 16px;
+    }
+
+    label {
+        font-size: 3.6vw;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+    header {
+        line-height: 32px;
+    }
+
+    h1 {
+        font-size: 5.0vw;
+    }
+
+    h2 {
+        font-size: 4.1vw;
+    }
+
+    h3 {
+        font-size:  4.0vw;
+        /* box */
+        padding: 0px 16px;
+    }
+
+    #link {
+        font-size: 6.4vw;
+    }
+
+    label {
+        font-size: 4.0vw;
+    }
+
+    img {
+        max-width: 75%;
+    }
+
+}
+
